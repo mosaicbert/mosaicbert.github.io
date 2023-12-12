@@ -19,15 +19,15 @@
             <div class="row">
                 <div class="col-md-12", style="padding: 10px;">
                     <h4 class="text-center" style="margin: 0px;">
-                        <a class="text-center", href = https://aditijha7.com>Jacob Portes*</a>, 
-                        <a class="text-center">Alex Trott*</a>, 
+                        <a class="text-center", href = https://jacobfulano.github.io>Jacob Portes*</a>, 
+                        <a class="text-center", href = https://twitter.com/alexrtrott>Alex Trott*</a>, 
                         <a class="text-center">Sam Havens</a>, 
                         <a class="text-center">Daniel King</a>, 
-                        <a class="text-center">Abhinav Venigalla</a>, 
+                        <a class="text-center", href = https://twitter.com/abhi_venigalla>Abhinav Venigalla</a>, 
                         <a class="text-center">Moin Nadeem</a>,
-                        <a class="text-center">Nikhil Sardana</a>,
+                        <a class="text-center", href = https://nikhilsardana.github.io>Nikhil Sardana</a>,
                         <a class="text-center">Daya Khudia</a>,
-                        <a class="text-center">Jonathan Frankle</a>
+                        <a class="text-center", href = http://www.jfrankle.com>Jonathan Frankle</a>
                     </h4>
                     
                     <h5 class="text-center">MosaicML x Databricks</h5> 
@@ -43,8 +43,30 @@
         <!-- Figure -->
         <div><p></p></div>
         <div class="container" style="max-width: 768px;" >
+            <div class="col-md-12">
+                <h2>How to Speed up BERT Pretraining</h2>
+            </div>
+
             <div class="row">
-                <em> What are the fastest ways to train a BERT model?</em>
+                <ul>
+                    <li>FlashAttention</li>
+                    <li>&#x1f978 ALiBi (Attention with Linear Biases)</li>
+                    <li>Gated Linear Units</li>
+                    <li>&#128073 Unpad your inputs after the attention block!</li>
+                    <li>Low Precision LayerNorm</li>
+                    <!-- Add more list items as needed -->
+                </ul>
+            </div>
+            <div class="row">
+                <em> And a few other tips and tricks &#128071</em>
+            </div>
+            <div class="row">
+                <ul>
+                    <li>Change the Masked Language Modeling ratio to 30%</li>
+                    <li>Remove dropout from the attention module</li>
+                    <li>use bfloat16</li>
+                    <li>Make your vocab Size as a multiple of 64</li>
+                </ul>
             </div>
         </div>
     </div>
