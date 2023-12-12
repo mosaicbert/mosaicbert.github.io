@@ -52,7 +52,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4>These are the main architectural modifications used by MosaicBERT for rapid pretraining:</h4>
+                    <h5>These are the main architectural modifications used by MosaicBERT for rapid pretraining &#128071</h5>
                 </div>
             </div>
             <div class="row">
@@ -62,19 +62,19 @@
                         <li><a href=https://github.com/ofirpress/attention_with_linear_biases>&#x1f978 ALiBi (Attention with Linear Biases):</a> ALiBi allows you to train short on shorter sequence lengths and then extrapolate to longer sequence lengths</li>
                         <li><a href="https://docs.mosaicml.com/projects/composer/en/latest/method_cards/gated_linear_units.html">&#x26E9 Gated Linear Units</a></li>
                         <li>&#128073 Unpad your inputs after the attention block! This avoids wasting compute on PAD tokens</li>
-                        <li>Low Precision LayerNorm: set LayerNorm operation to bfloat16 precision instead of the typical float32 precision</li>
+                        <li><a href="https://docs.mosaicml.com/projects/composer/en/stable/method_cards/low_precision_layernorm.html">Low Precision LayerNorm:</a> set LayerNorm operation to bfloat16 precision instead of the typical float32 precision</li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4> And here are a few more efficiency tips used by MosaicBERT &#128071</h4>
+                    <h5> And here are a few more efficiency tips used by MosaicBERT:</h5>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
                     <ul>
-                        <li>Change the Masked Language Modeling ratio to 30% (instead of the default 15%). </li>
+                        <li>Change the Masked Language Modeling ratio to 30% (instead of the default 15%)</li>
                         <li>Remove dropout from the attention module (dropout often slows things down)</li>
                         <li>Use bfloat16!</li>
                         <li>Make your vocab size as a multiple of 64 <a href="https://twitter.com/karpathy/status/1621578354024677377">(Andrej Karpathy says so!)</a></li>
@@ -83,7 +83,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <h4>Every ML practitioner who is pretraining or finetuning transformers should use these architecture modifications. Note that all modifications (except for MLM) can be applied to decoder architectures such as GPT and MPT.</h4>
+                    <h5>Every ML practitioner who is pretraining or finetuning transformers should use these architecture modifications. All modifications (except for MLM) can be applied to decoder architectures such as GPT and MPT.</h5>
                 </div>
             </div>
         </div>
