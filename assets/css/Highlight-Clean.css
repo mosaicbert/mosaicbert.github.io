@@ -16,6 +16,10 @@
     margin-top: 0;
     color: inherit;
   }
+
+  .highlight-clean ul {
+    color: black;
+  }
   
   .highlight-clean .intro {
     font-size: 16px;
