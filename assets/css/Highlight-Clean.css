@@ -18,6 +18,7 @@
   }
 
   .highlight-clean ul {
+    font-size: 16px;
     color: black;
   }
   
@@ -41,7 +42,7 @@
     opacity: 0.90;
     /*text-transform: uppercase;*/
     font-weight: bold;
-    font-size: 13px;
+    font-size: 16px;
     letter-spacing: 0.4px;
     line-height: 1;
     outline: none;
@@ -63,6 +64,7 @@
   
   body {
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
     padding-bottom: 50px;
     color:#13294E;
   }
